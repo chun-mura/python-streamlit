@@ -11,9 +11,6 @@ build: ## Dockerイメージをビルド
 	docker-compose build
 
 up: ## コンテナを起動（フォアグラウンド）
-	docker-compose up
-
-up-d: ## コンテナを起動（バックグラウンド）
 	docker-compose up -d
 
 down: ## コンテナを停止・削除
