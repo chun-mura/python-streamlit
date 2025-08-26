@@ -1,0 +1,290 @@
+# =============================================================================
+# SECURITY WARNING: Never commit credentials, API keys, or sensitive data!
+# =============================================================================
+# This .gitignore file is designed to prevent accidental commits of sensitive
+# information. Always use environment variables or secure secret management
+# systems for handling credentials in production environments.
+# =============================================================================
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python packaging
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Python environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Python package managers
+Pipfile.lock
+poetry.lock
+.pdm.toml
+__pypackages__/
+
+# Jupyter and IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Documentation
+docs/_build/
+/site
+
+# =============================================================================
+# NODE.JS / JAVASCRIPT
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# =============================================================================
+# IDEs AND EDITORS
+# =============================================================================
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# DOCKER AND CONTAINERS
+# =============================================================================
+.dockerignore
+docker-compose.override.yml
+docker-secrets/
+secrets/
+
+# =============================================================================
+# STREAMLIT
+# =============================================================================
+.streamlit/
+
+# =============================================================================
+# CREDENTIALS AND SECURITY
+# =============================================================================
+# Environment variables
+*.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# API keys and tokens
+credentials.json
+service-account-key.json
+*.password
+*.secret
+*.token
+*.auth
+*.credential
+*.cred
+
+# Certificates and keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.pkey
+*.priv
+*.pub
+*.keyring
+*.keystore
+*.jks
+*.p8
+*.mobileprovision
+*.provisionprofile
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+id_ecdsa
+id_ecdsa.pub
+
+# Cloud credentials
+.aws/
+aws.config
+aws.credentials
+.aws/credentials
+.aws/config
+gcloud.json
+service-account.json
+*.json.key
+azure.config
+azure.credentials
+
+# Kubernetes secrets
+k8s-secrets/
+kubernetes-secrets/
+
+# =============================================================================
+# DATABASES
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+database.yml
+db.yml
+
+# =============================================================================
+# LOGS AND TEMPORARY FILES
+# =============================================================================
+logs/
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+.cache/
+cache/
+
+# =============================================================================
+# DEVELOPMENT AND PERSONAL FILES
+# =============================================================================
+local/
+local.*
+local_*
+local-*
+notes.txt
+TODO.txt
+temp-notes.txt
+personal/
+private/
+
+# System history files
+.bash_history
+.zsh_history
+.history
+.bashrc
+.zshrc
+.bash_profile
+.zprofile

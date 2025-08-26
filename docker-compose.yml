@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    networks:
+      - streamlit-network
+
+networks:
+  streamlit-network:
+    driver: bridge
