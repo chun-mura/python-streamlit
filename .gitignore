@@ -172,10 +172,19 @@ $RECYCLE.BIN/
 # =============================================================================
 # DOCKER AND CONTAINERS
 # =============================================================================
-.dockerignore
+# Environment-specific Docker overrides (should not be committed)
 docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.*.yaml
+
+# Docker secrets and sensitive data
 docker-secrets/
 secrets/
+*.env.docker
+
+# Docker build artifacts
+.docker/
+docker-build/
 
 # =============================================================================
 # STREAMLIT
